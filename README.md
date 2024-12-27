@@ -17,6 +17,9 @@ This project is a Python-based AWS Lambda function that processes FDA approved d
 - Uses AWS Glue for data crawling, transformations, and workflow orchestration.
 - Leverages AWS Athena for querying and Grafana for visualization.
 
+## Data Processing Workflow
+![data_ingestion_diagram](https://github.com/user-attachments/assets/77da436a-f987-45bc-bb57-7ba0b0135e60)
+
 ## Resources
 
 - **[Postman](https://www.postman.com/)**: Postman is a popular API platform that allows users to interact with APIs by sending HTTP requests, testing endpoints, and visualizing responses. It can be used to efficiently explore and test the FDA API calls before implementing them in your workflow.
