@@ -73,12 +73,23 @@ https://api.fda.gov/drug/drugsfda.json?search=(submissions.submission_status_dat
 ## Usage
 
 1. Deploy the Python code to an AWS Lambda function.
-2. Configure the Lambda function with an appropriate execution role that has permissions to access Firehose and S3.
-3. Use AWS Glue for crawling, transformations, and workflows:
+   - `vs_fda_approved_drugs_2024_function.py`
+3. Configure the Lambda function with an appropriate execution role with permission to access Firehose and S3.
+4. Use AWS Glue for crawling, transformations, and workflows:
+    - `crawl_vs_fda_approved_drugs`: Crawler name (Schedule: Weekly or On Demand)
    - Use the crawler to catalog the data.
    - Run the workflows for Parquet table creation and cleanup.
-4. Query the data using Athena.
-5. Visualize the data in Grafana by connecting it to the Athena data source.
+     - Jobs:
+       - `delete_parquet_fda_approved_drugs_2024_table_s3_athena`: Deletes the parquet S3 files and the Parquet version of the fda table.
+       - `create_parquet_fda_approved_drugs_2024_table_glue_job`: Creates a table and refreshes of the Parquet fda data table.
+       - `publish_prod_parquet_fda_approved_drugs_2024_table`: Copies the table to a "prod" location appending the date.
+     - Triggers:
+       - `start_fda_approved_drugs_2024_pqt_pipeline`
+       - `delete_parquet_fda_approved_drugs_2024_table_s3_athena`
+       - `create_parquet_fda_approved_drugs_2024_table_glue_job`
+       - `publish_prod_parquet_fda_approved_drugs_2024_table`
+6. Query the data using Athena.
+7. Visualize the data in Grafana by connecting it to the Athena data source.
 
 ### Notes:
 - EventBridge rules can automatically pass a structured payload to the Lambda function when triggered by a schedule.
