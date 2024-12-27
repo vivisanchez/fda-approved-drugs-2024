@@ -10,6 +10,10 @@ This project is a Python-based AWS Lambda function that processes FDA approved d
 - Processes and reformats JSON data, including extracting key fields.
 - Sends processed data to an Amazon Kinesis Firehose delivery stream.
 - Stores results in S3 buckets for further processing and querying.
+- Utilizes Parquet tables for optimized data storage and retrieval, ensuring:
+  - Faster query performance in Athena due to columnar storage.
+  - Reduced storage costs in S3 with compression.
+  - nhanced compatibility with various AWS tools.
 - Uses AWS Glue for data crawling, transformations, and workflow orchestration.
 - Leverages AWS Athena for querying and Grafana for visualization.
 
