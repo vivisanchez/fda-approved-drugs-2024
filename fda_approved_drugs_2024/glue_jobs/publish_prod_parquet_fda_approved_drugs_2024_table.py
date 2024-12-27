@@ -5,7 +5,7 @@ from datetime import datetime
 QUERY_RESULTS_BUCKET = 's3://vs-athena-query-results-first-di-proj-dec-2024/'
 MY_DATABASE = 'de_proj_database'
 SOURCE_PARQUET_TABLE_NAME = 'fda_vs_fda_approved_drugs_2024_parquet_tbl'
-NEW_PROD_PARQUET_TABLE_NAME = 'open_meteo_weather_data_parquet_tbl_PROD'
+NEW_PROD_PARQUET_TABLE_NAME = 'fda_vs_fda_approved_drugs_2024_parquet_tbl_prod'
 NEW_PROD_PARQUET_TABLE_S3_BUCKET = 's3://parquet-vs-fda-approved-drugs-2024-table-prod-1'
 
 # create a string with the current UTC datetime
