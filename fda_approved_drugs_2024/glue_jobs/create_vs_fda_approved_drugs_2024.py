@@ -20,7 +20,7 @@ queryStart = client.start_query_execution(
     AS
 
     SELECT 
-        date_parse(submission_status_date, '%Y%m%d') AS "submission_status_date"
+        submission_status_date
         ,application_number
         ,submission_number
         ,submission_type
@@ -28,7 +28,7 @@ queryStart = client.start_query_execution(
             WHEN submission_status = 'AP' THEN 'APPROVED'
             WHEN submission_status = 'TA' THEN 'TENTATIVE APPROVAL'
             ELSE 'UNKNOWN'
-        END AS "SUBMISSION STATUS"
+        END AS submission_status
         ,sponsor_name
         ,products
         ,product_type
