@@ -20,7 +20,7 @@ queryStart = client.start_query_execution(
     AS
 
     SELECT 
-        submission_status_date
+        date_parse(submission_status_date, '%Y%m%d') AS "submission_status_date"
         ,application_number
         ,submission_number
         ,submission_type
