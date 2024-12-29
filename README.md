@@ -18,7 +18,9 @@ This project is a Python-based AWS Lambda function that processes FDA approved d
 - Leverages AWS Athena for querying and Grafana for visualization.
 
 ## Grafana Dashboard
-![Snapshot](https://vivisanchez.grafana.net/dashboard/snapshot/Mq6bP6tsIyzT458pwjoYJ9Vpan4d2Vsi)
+**[Snapshot](https://vivisanchez.grafana.net/dashboard/snapshot/Mq6bP6tsIyzT458pwjoYJ9Vpan4d2Vsi)**
+
+![image](https://github.com/user-attachments/assets/adb30ce2-bf2a-4e6b-bee9-f514db8ddfbc)
 
 ## Data Processing Workflow
 ![data_ingestion_diagram](https://github.com/user-attachments/assets/77da436a-f987-45bc-bb57-7ba0b0135e60)
