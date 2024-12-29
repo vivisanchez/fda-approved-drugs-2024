@@ -17,8 +17,8 @@ This project is a Python-based AWS Lambda function that processes FDA approved d
 - Uses AWS Glue for data crawling, transformations, and workflow orchestration.
 - Leverages AWS Athena for querying and Grafana for visualization.
 
-## Grafana Snapshot
-https://vivisanchez.grafana.net/dashboard/snapshot/Mq6bP6tsIyzT458pwjoYJ9Vpan4d2Vsi
+## Grafana Dashboard
+![Snapshot](https://vivisanchez.grafana.net/dashboard/snapshot/Mq6bP6tsIyzT458pwjoYJ9Vpan4d2Vsi)
 
 ## Data Processing Workflow
 ![data_ingestion_diagram](https://github.com/user-attachments/assets/77da436a-f987-45bc-bb57-7ba0b0135e60)
