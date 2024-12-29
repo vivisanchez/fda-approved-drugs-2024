@@ -25,7 +25,7 @@ queryStart = client.start_query_execution(
     partitioned_by = ARRAY['yr_mo_partition'])
     AS
 
-    SELECT
+    SELECT DISTINCT
         *
     FROM "{MY_DATABASE}"."{SOURCE_PARQUET_TABLE_NAME}"
 
