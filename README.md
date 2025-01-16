@@ -20,7 +20,6 @@ This project is a Python-based AWS Lambda function that processes FDA approved d
 ## Grafana Dashboard
 **[Snapshot](https://vivisanchez.grafana.net/dashboard/snapshot/ffSlWJ3StL0lp76u1ONO3BOvqlFaj03i)**
 
-![image](https://github.com/user-attachments/assets/adb30ce2-bf2a-4e6b-bee9-f514db8ddfbc)
 ![image](https://github.com/user-attachments/assets/b29c6ea1-af0b-41f5-893b-f1a39735e17b)
 
 ## Data Processing Workflow
